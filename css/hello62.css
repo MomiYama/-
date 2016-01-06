@@ -1,0 +1,593 @@
+@import url(http://fonts.googleapis.com/css?family=Source%20Sans%20Pro:700/);
+/* リセットCSS */
+/* html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+
+/*リセットCSSここまで*/
+
+
+
+/* clear fix */
+
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+.inline-block {
+	display: inline-block;
+}
+.ie6 .inline-block,
+.ie7 .inline-block {
+	display: inline;
+	zoom: 1;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+}
+
+/* IE lacks these rules */
+article, aside, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+/* clear fixここまで*/
+
+
+
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+html {
+	font-family:  '游ゴシック' ,Yu-gothic , 'Trebuchet MS', 'Arial', 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	color: #28cebe;
+	background-color: #fff;
+	-ms-text-size-adjust: 100%;
+	-webkit-texts-size-adjust: 100%;
+	-webkit-backface-visibility: hidden
+}
+html body {
+	margin: 0px;
+	padding: 0px
+}
+
+
+a {
+	color: #FF8DAD;
+	text-decoration: none
+}
+
+a:hover{	
+	opacity:0.8;
+	text-decoration: underline
+}
+
+.no-touch a:hover {
+	color: #6DC6F8;
+	text-decoration: underline
+}
+.documentation {
+	display:block;
+	margin: 0px auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	vertical-align:text-top;
+}
+
+.documentation h3, .documentation p{
+	font-weight:400
+	
+}
+
+
+
+/*sp*/
+
+@media screen and (max-width: 68.75em) {
+.documentation {
+	width: 100%;
+}
+
+h1 img{
+	text-align:center;
+	width:100%;
+	height:auto
+}
+
+
+.left{
+	display:block;
+	padding-bottom:4em
+}
+	
+ .right{	
+	display:block;
+}
+
+.image{
+	width:100%;
+	height:auto;
+}
+
+.image2{
+	width:260px;
+	height:auto;
+	margin-top:-100px;
+}
+
+.image3{
+	width:180px;
+	height:auto;
+	margin-bottom:-20px;
+}
+
+.fukidasi{
+	width:280px;
+	height:auto;
+	padding-right:10px;
+}
+
+
+}
+
+/*pc*/
+@media only screen and (min-width: 43.813em) {
+.documentation {
+	display:table;
+	padding-top:30px
+}
+
+h1 img{
+	text-align:center;
+	width:auto;
+	height:auto
+}
+
+
+.left{
+	display:table-cell;
+	vertical-align:text-top;
+	width:50%;
+	padding:30px;
+	
+}
+
+.right{
+	display:table-cell;
+	vertical-align:text-top;
+	width:50%;
+	padding:30px
+	
+}
+
+.image{
+	width:inherit;
+	height:inherit;
+}
+
+.image2{
+	width:306px;
+	height:247px;
+	margin-top:-100px;
+	margin-left:200px;
+}
+
+.image3{
+	width:210px;
+	height:auto;
+	margin-bottom:-20px;
+	margin-right:60px;
+}
+
+.fukidasi{
+	width:500px;
+	height:auto;
+}
+
+}
+
+
+
+/*smint*/
+h1, h2 {
+
+	margin:0 0 15px 0;
+}
+
+
+h1 {
+	padding-top:10px;
+	font-size: 26px;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	letter-spacing: -1px;
+	font-weight: 800;
+	color:rgba(255,128,148,0.80);
+}
+
+
+h2 {
+	padding-top:40px;
+	font-size: 20px;
+	font-size: 1.26rem;
+	line-height: 1.26rem;
+	font-weight:800;
+}
+
+h3 {
+	padding-top:20px;
+	line-height: 1.5rem;
+	font-size: 18px;
+	font-size: 1.1rem;
+	font-weight: 500
+}
+p {
+	line-height: 14px;
+	line-height: 1.6rem;
+	font-size: 14px;
+	font-size: 0.88rem
+}
+
+
+strong{
+	padding:2px;
+}
+
+
+a:hover{
+	text-decoration:none;
+	opacity:0.8;
+}
+
+
+.sans a{
+	font-size:1.2rem;
+	font-weight:400;
+	font-family:"Source Sans Pro" ,sans-serif;
+	color:rgba(40,206,190,1.00);
+}
+
+
+.clear {
+	clear: both;
+}
+
+.wrap {
+	width: 100%;
+	max-width: 1600px;
+	min-width: 320px;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+
+
+.section {
+	width: 100%;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 20px 5px;
+	height:auto;
+
+}
+
+
+.inner {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	min-height: 50px;
+	padding:30px 0;
+	font-size: 18px;
+	font-weight: 300;
+	text-align:center;
+}
+
+.inner:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+}
+
+.inner span{
+	font-weight:500;
+	padding-left:0.6rem;
+	padding-right:0.6rem;
+	padding-top:2px;
+	padding-bottom:2px;
+	color:rgba(255,141,159,1.00);
+	background:rgba(255,217,224,0.3);
+}
+
+.subMenu {
+	height: 50px;
+	z-index: 10000;
+	width: 100%;
+	height:inherit;
+	display:block;
+	background-color:rgba(255,255,194,1);
+}
+
+.subMenu .inner {
+	width:100%;
+	padding:0;
+	font-weight: 700;
+	margin: 0 auto;
+}
+
+
+.subNavBtn {
+	display:block;
+	height: 50px;
+	width: 12.5%;
+	float:left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 12px;
+	padding: 14px 4px;
+	text-align: center;
+	
+	color:#28CEBE;
+}
+ .subMenu a:hover {
+	background-color:rgba(255,255,128,0.8);
+
+}
+
+@media screen and (max-width: 43.812em) {
+
+subMenu {
+	height: 38px;
+}
+
+.subNavBtn {
+	height:38px;
+	width: 25%;
+	font-size: 10px;
+	background: #28CEBE;
+	color: #fff;
+
+}
+.subMenu a:hover {
+	background-color:#6FE3D7;
+}
+
+}
+
+
+
+
+#nyukai{
+	width:100%;
+	height:auto;
+	max-width:860px;
+	margin:0 auto;
+	border:5px solid rgba(40,206,190,0.64);
+	border-radius:20px;
+	border-style:dotted;
+	text-align:center;
+	background-image:url(../img/pattern02.png)
+}
+
+
+/* SECTIONS */
+
+.sTop {
+	background:#fff;
+	height: inherit;
+	
+}
+
+.s1 {
+	background:#fff;
+	min-height:420px;
+
+}
+
+
+.s2 .cloud{
+	background-image:url(../img/cl.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	min-height:426px;
+	height:auto;
+}
+
+
+
+.s3 {
+	width:80%;
+	border:rgba(255,255,255,1.00);
+	border-radius:20px;
+	background:#fff;
+	min-height:420px;
+}
+
+.s3 p{
+	line-height:30px;
+	line-height:1.88rem;
+}
+
+
+
+.left_arrow{
+	display:table-cell;
+	vertical-align:text-top;
+	width:50%;
+	padding-right:20%;
+	
+}
+
+.right_arrow{
+	display:table-cell;
+	vertical-align:text-top;
+	width:50%;
+	padding-left:20%
+	
+}
+
+
+
+
+.s4 .cloud {
+	background-image:url(../img/cloud2.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	min-height:426px;
+	height:auto;
+}
+
+.s4 p{
+	line-height:24px;
+	line-height:1.48rem;
+}
+
+
+
+.s5 .cloud {
+	width:100%;
+	margin-top:-30px;
+	background-image:url(../img/bikkuri.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	min-height:420px;
+	height:auto;
+}
+.s5 content p, .s5 .content h1{
+	width:100%;
+	padding-top:140px;
+}
+
+
+
+.s6 {
+	background:#fff;
+	min-height:420px;
+	
+}
+
+.s6 h1 img{
+	margin-bottom:-80px;
+	
+}
+
+.s6 .left img, .s6 .right img{
+	margin-bottom:-20px;
+	margin-top:-20px;
+
+
+}
+
+.s7 {
+	margin:0;
+	padding:0;
+	background:#28CEBE;
+	color:rgba(255,255,255,1.00);
+	min-height:600px;
+}
+
+
+
+.copy {
+	padding-top:10px;
+	padding-bottom:30px;
+	font-size:1rem;
+	font-weight:700;
+	font-family:"Source Sans Pro" ,sans-serif;
+}
